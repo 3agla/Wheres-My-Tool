@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WMT.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="White" Padding="24" CornerRadius="0">
+            <Label Text="Where's My Tool?" HorizontalTextAlignment="Center" 
+                   TextColor="Red" FontSize="36"/>
+        </Frame>
+        <Entry x:Name="uInput" Margin="0, 50, 0, 0" Placeholder="Enter Part #"/>
+        <Button Text="Find My Tool" HorizontalOptions="Center"
+                Padding="13" Margin="0, 0, 0, 0" Clicked="toolLookUp"></Button>
+        <Frame BackgroundColor="White" Padding="20" CornerRadius="0" Margin="0, 50, 0, 0">
+            <Label Text="Hand Tool: "/>
+        </Frame>
+        <Frame BackgroundColor="White" Padding="20" CornerRadius="0" Margin="0, -10, 0, 0">
+            <Label Text="Applicator: "/>
+        </Frame>
+        <Frame BackgroundColor="White" Padding="20" CornerRadius="0" Margin="100, -120, 0, 0">
+            <Label x:Name ="hTool"/>
+        </Frame>
+        <Frame BackgroundColor="White" Padding="20" CornerRadius="0" Margin="100, -10, 0, 0">
+            <Label x:Name ="aTool"/>
+        </Frame>
+        <Button Text="Information" HorizontalOptions="Center"
+                Padding="13" Margin="250, 240, 0, 0" Clicked="infoPage"></Button>
+    </StackLayout>
+
+</ContentPage>

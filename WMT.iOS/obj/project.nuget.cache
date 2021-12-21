@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "LvZ+HOUxSIdSCZohggitJ8325CQe3c9xEsy1TngmfXbG/K8MUGzHtHKpQNbhwTaGlMkOsLyDFCcs8VM6ZhVKTA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\daniels.ATLCONNECT\\OneDrive - ATL Technology\\Desktop\\Where's-My-Tool\\WMT\\WMT\\WMT.iOS\\WMT.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\daniels.ATLCONNECT\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\daniels.ATLCONNECT\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\daniels.ATLCONNECT\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

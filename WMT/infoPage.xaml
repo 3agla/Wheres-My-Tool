@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WMT.infoPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="This is a basic app that will assist in finding the right"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label Text="applicator and hand tool with the part number provided."
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label Text="INSTRUCTIONS:"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label Text="Type in the part number of the pin and press Find My Tool"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label Text="If you want to add a tool type in ADD and press Find My Tool"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label Text="If you want to remove a tool type in REMOVE and press Find My Tool"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
