@@ -1,27 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WMT.infoPage">
+             x:Class="WMT.infoPage" BackgroundColor="Silver">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="This is a basic app that will assist in finding the right"
+            <Label Text="About WMT?"
                 VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Label Text="applicator and hand tool with the part number provided."
+                HorizontalOptions="Center" 
+                TextColor="Black"/>
+            <Label Text="V.1.0"
                 VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Label Text="INSTRUCTIONS:"
+                HorizontalOptions="Center" 
+                TextColor="Black"/>
+            <Label Text="This app is desinged to store information about crimps"
                 VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Label Text="Type in the part number of the pin and press Find My Tool"
+                HorizontalOptions="Center" 
+                TextColor="Black"/>
+            <Label Text="and the tools that are needed for those crimps.  When a "
                 VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Label Text="If you want to add a tool type in ADD and press Find My Tool"
+                HorizontalOptions="Center" 
+                TextColor="Black"/>
+            <Label Text="crimp is typed in, it will then bring up the tools associated"
                 VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Label Text="If you want to remove a tool type in REMOVE and press Find My Tool"
+                HorizontalOptions="Center" 
+                TextColor="Black"/>
+            <Label Text="with that crimp."
                 VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" 
+                TextColor="Black"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

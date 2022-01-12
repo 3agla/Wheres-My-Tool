@@ -6,13 +6,20 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+
 namespace WMT
 {
+    public class MyDicts
+    {
+        public struct MyDict
+        {
+            public static Dictionary<string, string> hToolDict = new Dictionary<string, string>();
+            public static Dictionary<string, string> aToolDict = new Dictionary<string, string>();
+        }
+    }
+
     public partial class MainPage : ContentPage
     {
-        public Dictionary<string, string> hToolDict = new Dictionary<string, string>() { {"1234", "Test" } };
-        public Dictionary<string, string> aToolDict = new Dictionary<string, string>() { { "1234", "Test" } };
-
         public MainPage()
         {
             InitializeComponent();
@@ -27,33 +34,56 @@ namespace WMT
         {
             string key = uInput.Text;
             string handTool = ""; 
-            string applicator = "";
+            string applicator = ""; 
 
-            foreach(KeyValuePair<string, string> x in hToolDict)
+            if (key == null)
             {
-                if (x.Key == key){
-                    handTool = x.Value;
-                }
-                else
-                {
-                    handTool = "N/A";
-                }
+                return;
             }
-
-            foreach (KeyValuePair<string, string> x in aToolDict)
+            else if (key.ToUpper() == "ADD")
             {
-                if (x.Key == key)
+                uInput.Text = "";
+                addPage(sender, e);
+                key = "";
+            }
+            else
+            {
+                foreach (KeyValuePair<string, string> x in MyDicts.MyDict.hToolDict)
                 {
-                    applicator = x.Value;
+                    if (x.Key == key)
+                    {
+                        handTool = x.Value;
+                        break;
+                    }
+                    else
+                    {
+                        handTool = "N/A";
+                    }
                 }
-                else
+
+                foreach (KeyValuePair<string, string> x in MyDicts.MyDict.aToolDict)
                 {
-                    applicator = "N/A";
+                    if (x.Key == key)
+                    {
+                        applicator = x.Value;
+                        break;
+                    }
+                    else
+                    {
+                        applicator = "N/A";
+                    }
                 }
             }
 
             hTool.Text = handTool;
             aTool.Text = applicator;
+            dispLbl.Text = key;
+            uInput.Text = "";
+        }
+
+        public async void addPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new addPage());
         }
     }
 }

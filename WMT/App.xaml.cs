@@ -19,6 +19,7 @@ namespace WMT
 
         protected override void OnSleep()
         {
+            SavePropertiesAsync();
         }
 
         protected override void OnResume()

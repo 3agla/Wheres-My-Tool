@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WMT.addPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Silver" Padding="24" CornerRadius="0">
+            <Label Text="Add Tooling" HorizontalTextAlignment="Center" 
+                   TextColor="Red" FontSize="36"/>
+        </Frame>
+        <Entry x:Name="addInput" Margin="0, 50, 0, 0" Placeholder="Enter Part #" PlaceholderColor="Black"/>
+        <Frame BackgroundColor="Silver" Padding="20" CornerRadius="0" Margin="0, 50, 0, 0">
+            <Label Text="Hand Tool: " TextColor="Black"/>
+        </Frame>
+        <Frame BackgroundColor="Silver" Padding="20" CornerRadius="0" Margin="0, -10, 0, 0">
+            <Label Text="Applicator: " TextColor="Black"/>
+        </Frame>
+        <Frame BackgroundColor="White" Padding="4" CornerRadius="0" Margin="100, -120, 0, 0">
+            <Entry x:Name ="addHTool" TextColor="Black" Placeholder="Hand Tool #" PlaceholderColor="Black"/>
+        </Frame>
+        <Frame BackgroundColor="White" Padding="10" CornerRadius="0" Margin="100, -10, 0, 0">
+            <Entry x:Name ="addATool" TextColor="Black" Placeholder="Applicator Tool #" PlaceholderColor="Black"/>
+        </Frame>
+        <Button Text="Add Tool" Margin="0, 50, 0, 0" Clicked="addTool"/>
+        <Label x:Name="hToolAdded" HorizontalTextAlignment="Center" TextColor="Red"/>
+        <Label x:Name="aToolAdded" HorizontalTextAlignment="Center" TextColor="Red"/>
+    </StackLayout>
+
+</ContentPage>
